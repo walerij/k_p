@@ -3,6 +3,7 @@
     imageview:imageview
     loadimg:loadimg
     saveimg:saveimg
+    rotate:rotate
     Image:
         id:imageview
         source:"leto.jpg"
@@ -33,8 +34,11 @@
             font_size: 20
 
         Button:
+            id:rotate
             text: "Ротация"
             font_size: 20
+            on_press: app.rotate_window_pressed()
+
         Button:
             text: "Наложение"
             font_size: 20
